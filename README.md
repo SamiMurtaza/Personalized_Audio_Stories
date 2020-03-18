@@ -8,6 +8,10 @@
     * [The GUI](#The-GUI)
     * [The Model](#The-Model) 
 * [The Dataset](#The-Dataset)
+* [UI Elements](#UI-Elements)
+    * [Audio Files](#Audio-Files)
+    * [Text Files](#Text-Files)
+    * [Images](#Images)
 
 ## Libraries Required
 
@@ -95,3 +99,17 @@ The number in the filename can be used to identify what is spoken as follows:
 | 25            | I climbed up the hill and reached out to the sky                                                                                                               |
 | 26            | Hurry hurry, they say to mom and dad, we don’t want to be late                                                                                                 |
 | 27            | He dreamt about a place that he had never seen before                                                                                                          |
+
+## UI Elements
+The UI requires different text, image and audio files.
+
+### Audio Files
+Each page of each story has a corresponding audio file. The first letter of the file can be used to identify which story the audio file belongs to. All such files will have the word *page* in their filename followed by the page number. 
+
+There are also a few sample files, these are files from the data set that are to be played when the user wished to identify a speaker. Lastly there are the minor files such as the click sound.
+
+### Text Files
+Each story has a corresponding txt file. These are used to generate the subtitles for each page. There is also a text file which contains text that the user is expected to say while recording their voice. This file will also be used to verify what the user has said. 
+
+### Images 
+The UI uses over 50 image files for different parts of the interface, these include but are not limited to, the background images, the home and back icons, story icons, illustrations for each page of the story and playback buttons. 
