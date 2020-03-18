@@ -2,7 +2,8 @@
 
 ## Libraries required
 
-###For GUI
+### For GUI
+
 - **pygame**: The GUI is built primarily using pygame. This library provides the ability to create and interact with a window. 
 - **winsound**: Is used to play different sounds, for example the sound made when a button is clicked. 
 - **speech_recognition**: As the name suggests, this library is used to recognize what a speaker has said. This is used to check if the user has said what we intended for them to say.
