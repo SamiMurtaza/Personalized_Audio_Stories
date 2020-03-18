@@ -1,7 +1,5 @@
 # Personalized_Audio_Stories
 
-# Personalized_Audio_Stories
-
 * [Libraries required](##Libraries-Required)
     * [For GUI](###For-GUI)
     * [For Model ](###For-Model)
