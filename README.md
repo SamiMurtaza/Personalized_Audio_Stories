@@ -4,11 +4,13 @@
     * [For GUI](###For-GUI)
     * [For Model ](###For-Model)
     * [Libraries needed that come with python](###Libraries-needed-that-come-with-python)
+* [Running the Prototype](##Running-the-Prototype)
+    * [The GUI](###The-GUI)
+    * [The Model](###The-Model) 
+ 
+## Libraries Required
 
-## Libraries required
-
-### For GUI
-
+###For GUI
 - **pygame**: The GUI is built primarily using pygame. This library provides the ability to create and interact with a window. 
 - **winsound**: Is used to play different sounds, for example the sound made when a button is clicked. 
 - **speech_recognition**: As the name suggests, this library is used to recognize what a speaker has said. This is used to check if the user has said what we intended for them to say.
@@ -29,3 +31,26 @@
 - time
 - os
 - math 
+
+## Running the Prototype
+
+### The GUI
+
+To run the GUI we just need to execute the file *main.py*. This can be done by executing the script in IDLE or by typing this in the cmd.
+  
+    python3 main.py
+
+It is to be noted that the GUI used winsound which is a windows library and as such prevents the GUI from running on Linux. 
+
+### The Model
+
+There are multiple configurations of the model. What each of the configuration does is as follows and how to run them is shown in the table below:
+
+| Filename        | Spectrogram Type | Number of Layers | Style Loss Files | To Run                  |
+|-----------------|------------------|------------------|------------------|-------------------------|
+| mel__cnn.py     | Mel              | 1                | 1                | python3 mel__cnn.py     |
+| lin__cnn.py     | Linear           | 1                | 1                | python3 lin__cnn.py     |
+| mel__cnn2.py    | Mel              | 2                | 1                | python3 mel__cnn2.py    |
+| lin__cnn2.py    | Linear           | 2                | 1                | python3 lin__cnn2.py    |
+| mel__cnn2All.py | Mel              | 2                | 24               | python3 mel__cnn2All.py |
+| lin__cnn2All.py | Linear           | 2                | 24               | python3 lin__cnn2All.py | 
