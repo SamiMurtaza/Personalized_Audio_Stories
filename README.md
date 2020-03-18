@@ -1,5 +1,12 @@
 # Personalized_Audio_Stories
 
+# Personalized_Audio_Stories
+
+* [Libraries required](##Libraries-Required)
+    * [For GUI](###For-GUI)
+    * [For Model ](###For-Model)
+    * [Libraries needed that come with python](###Libraries-needed-that-come-with-python)
+
 ## Libraries required
 
 ### For GUI
