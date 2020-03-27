@@ -70,16 +70,15 @@ s_t_dist = []
 t_m_dist = []
 
 #ALL TARGET AGAINST ONE BASE AND ONE MIMICKED
-for i in range(1,27):
-  if os.path.exists(basepath+tar_name+'/MS-'+ str(i) +'.WAV'):
-    y, sr = librosa.load(basepath+tar_name+'/MS-'+ str(i) +'.WAV')
-    mfcc = librosa.feature.mfcc(y,sr)
+for i in os.listdir(basepath + tar_name + "/"):
+  y, sr = librosa.load(basepath+tar_name+"/"+i)
+  mfcc = librosa.feature.mfcc(y,sr)
 
-    distA, cost, acc_cost, path = dtw(mfcc_s.T, mfcc.T, dist=lambda x, y: norm(x - y, ord=1))
-    s_t_dist.append(distA)
+  distA, cost, acc_cost, path = dtw(mfcc_s.T, mfcc.T, dist=lambda x, y: norm(x - y, ord=1))
+  s_t_dist.append(distA)
 
-    dist1, cost, acc_cost, path = dtw(mfcc_m.T, mfcc.T, dist=lambda x, y: norm(x - y, ord=1))
-    t_m_dist.append(dist1)
+  dist1, cost, acc_cost, path = dtw(mfcc_m.T, mfcc.T, dist=lambda x, y: norm(x - y, ord=1))
+  t_m_dist.append(dist1)
 
 #MEDIAN OF SOURCE TARGET DISTANCE
 s_t_median = stat.mean(s_t_dist) 
